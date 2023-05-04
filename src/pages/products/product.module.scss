@@ -1,0 +1,207 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 2px #e5e6e8;
+  width: 250px;
+  padding: 3px 10px 5px 10px;
+
+
+  &:hover {
+    border: solid 2px #9db0ea;
+    box-shadow: 1px 2px 15px;
+    scale: 1.03;
+  }
+}
+
+.image {
+  width: 212px;
+  height: 308px;
+  margin: 0 auto;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  color: #bd1111;
+  margin: 0 0 10px 0;
+}
+
+.price {
+  text-align: end;
+  font-size: 24px;
+  font-weight: 600;
+  color: #5d5db9;
+  margin: 0;
+}
+
+.wrappVolume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.number {
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 4px;
+}
+
+.volume {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.buttonStar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 35px;
+  height: 35px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.Star {
+  width: 35px;
+  height: 35px;
+}
+
+.imageWrapp {
+  display: flex;
+}
+
+.modalCloseButton,
+.modalCloseButtonStar {
+  width: 20px;
+  height: 20px;
+  color: #222428;
+  font-size: 20px;
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.modalCloseButtonStar {
+  padding-right: 16px;
+}
+
+.closeButton {
+  background-color: #FFFFFF;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+// Table
+
+.productTable {
+  max-width: 1200px;
+  //width: 90%;
+  display: flex;
+  border: 1px solid #d9d7e3;
+
+  &:hover {
+    border: solid 2px #9db0ea;
+    box-shadow: 1px 2px 15px;
+  }
+}
+
+.imageWrappTable {
+  display: flex;
+}
+
+.imageTable {
+  width: 65px;
+  height: 85px;
+  margin: 0 auto;
+}
+
+.nameTable {
+  display: flex;
+  align-items: center;
+  width: 610px;
+  //width: 50%;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  color: #bd1111;
+  margin-right: 4px;
+  padding-left: 6px;
+}
+
+.priceTable {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  //width: 13%;
+  font-size: 20px;
+  font-weight: 500;
+  color: #5d5db9;
+  margin-right: 6px;
+}
+
+.wrappVolumeTable {
+  width: 160px;
+  //width: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.numberTable {
+  width: 65px;
+  //width: 5%;
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 8px;
+}
+
+.volumeTable {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.buttonStarTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-left: 10px;
+  border: none;
+  width: 35px;
+  height: 35px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.modalCloseButtonTable {
+  width: 25px;
+  height: 25px;
+  color: #222428;
+  font-size: 20px;
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.StarTable {
+  width: 24px;
+  height: 24px;
+}
+
