@@ -1,4 +1,5 @@
 .layoutWrapper {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #c1c0cb;
@@ -18,6 +19,15 @@
   &:hover {
     color: red;
   }
+
+  @media (max-width: 500px) {
+    margin-left: 10px;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 .layout {
@@ -28,10 +38,15 @@
   cursor: pointer;
   font-size: 20px;
   font-weight: 500;
-  //color: blue;
   padding: 0 10px;
   margin: 0;
   list-style-type: none;
+  
+  @media (max-width: 380px) {
+    column-gap: 10px;
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 .link {

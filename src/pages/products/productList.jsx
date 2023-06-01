@@ -10,7 +10,7 @@ import shoppingCart from "../../image/shoppingCart.png";
 import greenCart from "../../image/green cart.png";
 import starColor from "../../image/starColor1.png";
 import starWhite from "../../image/starWhite.png"
-
+// localStorage.removeItem('starArray');
 
 export function ProductList(props) {
     const {

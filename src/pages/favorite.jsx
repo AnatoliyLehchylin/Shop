@@ -42,8 +42,8 @@ export function Favorite(props) {
 
     return (
         <div>
-            <div className={s.header}>
-                <p className={s.title}>FAVORITES</p>
+            <div className={st.header}>
+                <p className={st.title}>FAVORITES</p>
                 <div className={st.headerWrapp}>
                     <div className={st.headerStarWrapp}>
                         <img className={st.shoppingStar} src={favorites.length > 0 ? starColor : starWhite}/>

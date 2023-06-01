@@ -170,11 +170,11 @@ export function Product(props) {
                                                                                             onClick={handleClickDeleteProductFav}><img
                         className={s.StarTable} src={starColor} alt="star"/></button></span>}
                 </div>
-                {!!onButton && <div className={s.buttonWrapper}>
-                    {!onCart && Button(showModalFirst, 'ADD TO CART', '#94ef96')}
-                    {onCart && Button(handleClickCart, 'REMOVE FROM CART', '#2ac72a')}
+                {!!onButton && <div className={s.buttonWrapperTable}>
+                    {!onCart && <Button onClick={showModalFirst} text={'ADD TO CART'} backgroundColor={'#94ef96'} />}
+                    {onCart && <Button onClick={handleClickCart} text={'REMOVE FROM CART'} backgroundColor={'#2ac72a'} />}
                     <button className={s.buttonStarTable} onClick={handleClickStar}>
-                        <img className={s.Star} src={onStar ? starColor : star} alt="star"/>
+                        <img className={s.StarTable} src={onStar ? starColor : star} alt="star"/>
                     </button>
                 </div>}
             </div>}

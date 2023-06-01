@@ -21,7 +21,7 @@ export function Cart(props) {
     const products = useSelector(store => store.productList);
     const cart = useSelector(store => store.cart);
     const favorites = useSelector(store => store.favorites);
-    const { toTable } = useContext(ContextToTable);
+    const {toTable} = useContext(ContextToTable);
 
     function PaintProductCard(product) {
 
@@ -46,29 +46,31 @@ export function Cart(props) {
 
     return (
         <div>
-            <div className={s.header}>
-                <p className={s.title}>CART</p>
+            <div className={st.header}>
+                <p className={st.title}>CART</p>
                 <div className={st.headerWrapp}>
                     <div className={st.headerStarWrapp}>
                         <img className={st.shoppingStar} src={favorites.length > 0 ? starColor : starWhite}/>
                         {favorites.length > 0 && <span className={st.spanStarCounter}>{favorites.length}</span>}
                     </div>
                     <div className={st.headerCartWrapp}>
-                        <img className={st.shoppingCart} src={cart.length > 0 ? greenCart : shoppingCart }/>
+                        <img className={st.shoppingCart} src={cart.length > 0 ? greenCart : shoppingCart}/>
                         {cart.length > 0 && <span className={st.spanCardCounter}>{cart.length}</span>}
                     </div>
                 </div>
             </div>
             {cart.length < 1 &&
                 <div className={s.cartEmpty}>
-                <h1 className={s.cartEmptyTitle}>CART IS EMPTY</h1>
-                <img className={s.cartBox} src={yashik}/>
-                </div> }
-            <div className={s.wrapper}>
+                    <h1 className={s.cartEmptyTitle}>CART IS EMPTY</h1>
+                    <img className={s.cartBox} src={yashik}/>
+                </div>}
+            <div className={toTable ? classNames(s.wrapper) : classNames(s.wrapperTable)}>
                 <div className={toTable ? classNames(s.productWrapp) : classNames(s.productWrapp, s.productWrappTable)}>
                     {products.map(product => cart.includes(product.number) && PaintProductCard(product))}
                 </div>
-                {cart.length > 0 && <Form />}
+                <div className={s.formWrapp}>
+                    {cart.length > 0 && <Form/>}
+                </div>
             </div>
         </div>
     )

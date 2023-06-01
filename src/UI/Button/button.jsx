@@ -1,11 +1,17 @@
-
 import PropTypes from 'prop-types';
+import {useContext} from "react";
+import {ContextToTable} from "../../context";
+import classNames from 'classnames';
+
 import s from './Button.module.scss';
+
 
 export function Button(props) {
 const {onClick, text, backgroundColor} = props;
+    const {toTable} = useContext(ContextToTable);
+
     return (
-        <button type='button' className={s.btn} onClick={onClick} style={{backgroundColor: backgroundColor}}>
+        <button type='button' className={toTable ? classNames (s.btn) : classNames(s.btnTable)} onClick={onClick} style={{backgroundColor: backgroundColor}}>
             {text}
         </button>
     )

@@ -1,5 +1,37 @@
 .form {
+  min-width: 290px;
   margin-left: 10px;
+  padding-right: 5px;
+
+  @media (max-width: 920px) {
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 450px;
+  }
+
+  @media (max-width: 600px) {
+    margin-left: 5px;
+    width: 350px;
+  }
+
+  @media (max-width: 500px) {
+    margin-left: 5px;
+    width: 250px;
+  }
+
+}
+
+.formTable {
+  padding: 10px 20px;
+  width: 500px;
+
+  @media (max-width: 600px) {
+    width: 350px;
+  }
+
+  @media (max-width: 500px) {
+    width: 250px;
+  }
 }
 
 .formTitle {
@@ -7,6 +39,11 @@
   font-weight: 500;
   font-size: 24px;
   padding-bottom: 20px;
+
+  @media (max-width: 500px) {
+    font-weight: 500;
+    font-size: 20px;
+  }
 }
 
 .inputContainer {

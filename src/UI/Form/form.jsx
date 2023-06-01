@@ -1,16 +1,20 @@
 import {useFormik} from "formik";
 import * as Yup from "yup";
 import {PatternFormat} from 'react-number-format';
+import classNames from "classnames";
+import {useDispatch, useSelector} from "react-redux";
+import {useContext} from "react";
 
 import {ClearCart, ClearCartStatus} from "../../actions";
-import {useDispatch, useSelector} from "react-redux";
 import s from './form.module.scss'
+import {ContextToTable} from "../../context";
 
 export function Form() {
 
     const cart = useSelector(store => store.cart);
     const products = useSelector(store => store.productList);
     const dispatch = useDispatch();
+    const {toTable} = useContext(ContextToTable);
 
     function clear() {
         dispatch(ClearCartStatus());
@@ -46,8 +50,8 @@ export function Form() {
 
     return (
 
-        <form className={s.form} onSubmit={formik.handleSubmit}>
-            <div className={s.formTitle}>Форма для придбання товару</div>
+        <form className={toTable ? classNames(s.form) : classNames(s.formTable)}  onSubmit={formik.handleSubmit}>
+            <div className={s.formTitle}>PURCHASE FORM</div>
             <div className={s.inputContainer}>
                 <label>First Name</label>
                 <input className={s.input}
