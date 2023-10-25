@@ -2,7 +2,6 @@
   "name": "Shop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anatoliylehchylin.github.io/Shop",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
@@ -25,10 +24,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -43,10 +46,10 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.6.0",
     "gh-pages": "^6.0.0",
     "react-router-dom": "^6.10.0",
     "react-test-renderer": "^18.2.0",
-    "sass": "^1.60.0",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "sass": "^1.60.0"
   }
 }
