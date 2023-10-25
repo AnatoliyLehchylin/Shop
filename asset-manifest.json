@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Shop/static/css/main.853dbf30.css",
+    "main.js": "/Shop/static/js/main.0d422b87.js",
+    "static/media/yashik.jpg": "/Shop/static/media/yashik.ef5caffff5aa7f373b2a.jpg",
+    "static/media/starColor1.png": "/Shop/static/media/starColor1.8813493990c7cd1fa4b0.png",
+    "static/media/green cart.png": "/Shop/static/media/green cart.2782e3acbbacac0bcec0.png",
+    "static/media/starWhite.png": "/Shop/static/media/starWhite.190d870d386afd29523a.png",
+    "index.html": "/Shop/index.html",
+    "main.853dbf30.css.map": "/Shop/static/css/main.853dbf30.css.map",
+    "main.0d422b87.js.map": "/Shop/static/js/main.0d422b87.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.853dbf30.css",
+    "static/js/main.0d422b87.js"
+  ]
+}
